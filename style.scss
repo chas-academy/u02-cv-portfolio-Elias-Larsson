@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1, h3 {
+h1 {
+    font-size: 24px;
+    margin: 8 auto;
+}
+h3 {
     margin: 8px;
 }
 h4 {
@@ -22,35 +26,39 @@ table {
         font-size: 20px;
     }
 }
+iframe {
+    height: 300px;
+    width: 100%;
+}
 body {
-    background-color: blue;    
+    background-color: $primary-color;    
     display: flex;
     flex-direction: row;
-    overflow: auto;
     font-family: $font-stack; 
-    color: $primary-color;
-    aside {
-        background-color: lightgreen;
-       
-        header {
-            position: relative;
-            height: 200px;
-            background-color: green;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
-        }
-
+    color: $font-color;
+    
+}
+aside {
+    background-color: $secondary-color;
+   
+    header {
+        height: 200px;
+        background-color: $complementary-color;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
     }
 
-    section {
-    padding: 20px;
-
-    }
 }
 
+section {
+padding-left: 20px;
 
-@media screen and (max-width: 600px) {
-    img {
-        height: 110px;
+}
+section * {
+    margin: 18px 0px 18px 0px;        
+}
+
+@media only screen and (max-width: 540px) {
+    h2 {
+        font-size: 18px;
     }
-    
 } 

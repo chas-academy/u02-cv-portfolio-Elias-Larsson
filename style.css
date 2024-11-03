@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
-h1, h3 {
+h1 {
+  font-size: 24px;
+  margin: 8 auto;
+}
+
+h3 {
   margin: 8px;
 }
 
@@ -27,31 +32,39 @@ table th {
   font-size: 20px;
 }
 
+iframe {
+  height: 300px;
+  width: 100%;
+}
+
 body {
-  background-color: lightblue;
+  background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  overflow: auto;
   font-family: Helvetica, sans-serif;
   color: #333;
 }
-body aside {
-  background-color: lightgreen;
+
+aside {
+  background-color: #D4A86A;
 }
-body aside header {
-  position: relative;
+aside header {
   height: 200px;
-  background-color: green;
+  background-color: #2E6287;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
 }
-body section {
-  padding: 20px;
+
+section {
+  padding-left: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  img {
-    height: 110px;
+section * {
+  margin: 18px 0px 18px 0px;
+}
+
+@media only screen and (max-width: 540px) {
+  h2 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
