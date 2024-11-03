@@ -23,10 +23,9 @@ table {
     }
 }
 body {
-    background-color: lightblue;    
+    background-color: blue;    
     display: flex;
     flex-direction: row;
-    width: 100%;
     overflow: auto;
     font-family: $font-stack; 
     color: $primary-color;
@@ -53,4 +52,5 @@ body {
     img {
         height: 110px;
     }
+    
 } 
