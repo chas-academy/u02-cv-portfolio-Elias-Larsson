@@ -4,10 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-    font-size: 24px;
-    margin: 8 auto;
-}
+
 h3 {
     margin: 8px;
 }
@@ -30,6 +27,7 @@ iframe {
     height: 300px;
     width: 100%;
 }
+
 body {
     background-color: $primary-color;    
     display: flex;
@@ -56,9 +54,43 @@ padding-left: 20px;
 section * {
     margin: 18px 0px 18px 0px;        
 }
+nav {
+    background-color: black;
+    color: white; 
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+    h1 {
+        font-size: 24px;
+        padding: 14px 16px;
+    }
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+    li {
+        float: right;
+        a {
+            padding: 14px 16px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    li a:hover {
+        background-color: grey;
+    }
+}
+}
 
 @media only screen and (max-width: 540px) {
     h2 {
         font-size: 18px;
+    }
+    nav {
+        flex-direction: column;
     }
 } 
