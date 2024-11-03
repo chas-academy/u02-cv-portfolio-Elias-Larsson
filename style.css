@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  margin: 8px;
+}
+
+h4 {
+  margin-left: 14px;
+}
+
+img {
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+}
+
+table {
+  margin: 10px;
+}
+table th {
+  font-size: 20px;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: auto;
+  font-family: Helvetica, sans-serif;
+  color: #333;
+}
+body aside {
+  background-color: lightgreen;
+}
+body aside header {
+  position: relative;
+  height: 200px;
+  background-color: green;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+body section {
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    height: 110px;
+  }
+}/*# sourceMappingURL=style.css.map */

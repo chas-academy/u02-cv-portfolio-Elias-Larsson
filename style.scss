@@ -1,0 +1,56 @@
+@use 'variables' as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h3 {
+    margin: 8px;
+}
+h4 {
+    margin-left: 14px;
+}
+img {
+    margin: 0 auto;
+    height: 150px;
+    display: block;
+    clip-path: circle(40%);
+}
+table {
+    margin: 10px;
+    th {
+        font-size: 20px;
+    }
+}
+body {
+    background-color: lightblue;    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: auto;
+    font-family: $font-stack; 
+    color: $primary-color;
+    aside {
+        background-color: lightgreen;
+       
+        header {
+            position: relative;
+            height: 200px;
+            background-color: green;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+        }
+
+    }
+
+    section {
+    padding: 20px;
+
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    img {
+        height: 110px;
+    }
+} 
